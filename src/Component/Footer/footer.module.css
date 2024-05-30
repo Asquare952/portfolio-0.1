@@ -1,0 +1,36 @@
+.footerContainer{
+  background: #000000;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+}
+.subContainer{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.footerLogo img{
+  width: 45px;
+}
+.copyWrite{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.socialAcc{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.socialAcc a{
+  display: block;
+}
+@media screen and (max-width: 480px){
+  .copyWrite{
+  display: flex;
+  flex-direction: column;
+}
+}

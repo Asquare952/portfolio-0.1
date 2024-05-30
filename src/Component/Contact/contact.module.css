@@ -1,0 +1,73 @@
+.contactContainer{
+  /* min-height: 20vh; */
+  padding: 30px 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.getInTouchBtn:hover{
+  scale: 1.05;
+}
+.getInTouchBtn a{
+  color: white;
+}
+.socialLinks{
+  display: flex;
+  gap: 1.5rem;
+}
+.socialLinksItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000000;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+.content h4{
+  text-align: center;
+  width: 290px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.content p{
+  width: 310px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #71717A;
+  text-align: center;
+}
+.hireBtn{
+  font-size: 14px;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 5px;
+  background-color: #000000;
+}
+.hireBtn a{
+  color: #ffffff;
+}
+.hireBtn:hover{
+  scale: 0.9;
+}
+
+@media screen and (min-width: 768px) {
+.content h4{
+  width: 590px;
+}
+.content p{
+  width: 700px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #71717A;
+  text-align: center;
+}
+}
