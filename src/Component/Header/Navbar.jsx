@@ -32,7 +32,10 @@ const NavBar = () => {
                 )}
               </div>
             </div>
-            <nav className={dropDown ? "nav-links dropdown" : "nav-links"}>
+            <nav
+              className={dropDown ? "nav-links dropdown" : "nav-links"}
+              onClick={handleNotificationPop}
+            >
               <ul className="links">
                 <li>
                   <a href="#aboutMe">AboutMe</a>
@@ -50,7 +53,9 @@ const NavBar = () => {
             </nav>
             <div
               className={
-                dropDown ? "download-Cv-Container dropdown" : "download-Cv-Container"
+                dropDown
+                  ? "download-Cv-Container dropdown"
+                  : "download-Cv-Container"
               }
             >
               <button className="download-Cv">
