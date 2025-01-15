@@ -9,10 +9,8 @@ const Home = () => {
             <img src={HeroImg} alt="" />
           </div>
           <div className={Styles.banner}>
-            <h4>
-              Hello I'am Abdul Afeez Olamilkan. A frontend{" "}
-              developer.
-            </h4>
+            <h4>Hello I'am Abdul Afeez Olamilkan. I'am frontend developer.</h4>
+            {/* <h6></h6> */}
           </div>
         </div>
       </section>

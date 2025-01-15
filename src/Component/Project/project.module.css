@@ -30,7 +30,7 @@ span{
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  gap: 1rem;
+  gap: 1.5rem;
   border-radius: 10px;
 }
 .project{
@@ -39,6 +39,8 @@ span{
 .project img{
   max-width: 100%;
   height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
 }
 .details{
   display: flex;
@@ -55,7 +57,12 @@ span{
 .details h3{
   font-size: 2rem;
 }
-.details a{
+.links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links a{
   color: #ffff;
 }
 @media screen and (min-width: 1024px){

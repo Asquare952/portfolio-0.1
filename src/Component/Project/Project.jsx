@@ -1,6 +1,7 @@
 import Styles from "./project.module.css";
 import MyProjectsData from "../../utils/MyWorksData";
-import { LiaExternalLinkAltSolid } from "react-icons/lia";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 import { useState } from "react";
 const Project = () => {
   const [project, setProject] = useState(MyProjectsData);
@@ -15,17 +16,29 @@ const Project = () => {
           </div>
           <div className={Styles.projects}>
             {project.map((projects) => {
-              const { id, image, title, description } = projects;
+              const {
+                id,
+                image,
+                title,
+                description,
+                liveViewLink,
+                sourceCode,
+              } = projects;
               return (
                 <div key={id} className={Styles.project}>
                   {/* <a className={Styles.projectImg} href=""> */}
-                    <img src={image} alt={image} />
+                  <img src={image} alt={image} />
                   {/* </a> */}
                   <div className={Styles.details}>
                     <h4>{title}</h4>
                     <p>{description}</p>
-                    <a href="">
-                      <LiaExternalLinkAltSolid />
+                  </div>
+                  <div className={Styles.links}>
+                    <a href={liveViewLink}>
+                      <FaExternalLinkAlt />
+                    </a>
+                    <a href={sourceCode}>
+                      <FaCode />
                     </a>
                   </div>
                 </div>

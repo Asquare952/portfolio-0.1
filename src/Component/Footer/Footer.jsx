@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <section className={Styles.footerContainer}>
@@ -16,13 +17,13 @@ const Footer = () => {
               </a>
             </div>
             <p>
-              Copyright <LiaCopyright /> 2024 | All Right Reserved
+              Copyright <LiaCopyright /> {currentYear} | All Right Reserved
             </p>
             <div className={Styles.socialAcc}>
               <a href="https://x.com/lekan_coder">
                 <FaXTwitter />
               </a>
-              <a href="https://www.linkedin.com/in/abdul-afeez-abdul-azeez-16a4bb303/">
+              <a href="">
                 <FaLinkedinIn />
               </a>
               <a href="https://github.com/Asquare952">
