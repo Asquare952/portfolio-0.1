@@ -26,20 +26,21 @@ const Project = () => {
               } = projects;
               return (
                 <div key={id} className={Styles.project}>
-                  {/* <a className={Styles.projectImg} href=""> */}
                   <img src={image} alt={image} />
-                  {/* </a> */}
-                  <div className={Styles.details}>
-                    <h4>{title}</h4>
-                    <p>{description}</p>
-                  </div>
-                  <div className={Styles.links}>
-                    <a href={liveViewLink}>
-                      <FaExternalLinkAlt />
-                    </a>
-                    <a href={sourceCode}>
-                      <FaCode />
-                    </a>
+
+                  <div className={Styles.description}>
+                    <div className={Styles.details}>
+                      <h4>{title}</h4>
+                      <p>{description}</p>
+                    </div>
+                    <div className={Styles.links}>
+                      <a href={liveViewLink}>
+                        <FaExternalLinkAlt />
+                      </a>
+                      <a href={sourceCode}>
+                        <FaCode />
+                      </a>
+                    </div>
                   </div>
                 </div>
               );
