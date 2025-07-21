@@ -30,7 +30,7 @@ span {
   gap: 1rem;
 }
 .firstPara {
-  width: 569px;
+  max-width: 569px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -38,48 +38,40 @@ span {
   color: #1a2e35;
 }
 .secondPara {
-  width: 301px;
+  max-width: 480px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
   letter-spacing: 1.7px;
   color: #1a2e35;
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .secondPara {
   width: 500px;
 }
-}
+} */
 @media screen and (max-width: 740px) {
   .aboutMeContent {
     flex-direction: column;
   }
 }
-@media (min-width: 375px) and (max-width: 767px) {
+/* @media (min-width: 375px) and (max-width: 767px) {
   .secondPara {
   width: 355px;
 }
-}
-@media screen and (max-width: 540px) {
+} */
+/* @media screen and (max-width: 540px) {
   .firstPara{
     width: 350px;
   }
-}
-@media screen and (max-width: 320px) {
+} */
+/* @media screen and (max-width: 320px) {
   .firstPara{
     width: 300px;
   }
-}
-@media screen and (max-width: 280px) {
+} */
+/* @media screen and (max-width: 280px) {
   .firstPara{
     width: 250px;
   }
-  /* .secondPara {
-  width: 310px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 1.7px;
-  color: #1a2e35;
 } */
-}
